@@ -33,7 +33,7 @@ app.post('/post',async(req,res)=>{
     //   }
       
     //   main();
-      res.status(201).send({data :result })
+      res.status(201).json({data :result })
     } catch (error) {
         res.status(400).send(error)
         console.log(error)
@@ -43,6 +43,6 @@ app.post('/post',async(req,res)=>{
 
 
 
-app.listen( 3001,()=>{
+app.listen( 6969,()=>{
     console.log("listeing on 3000")
 })
