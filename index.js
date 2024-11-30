@@ -1,13 +1,12 @@
-import express from 'express';
-import cors from 'cors'
-import OpenAI from 'openai';
-import 'dotenv/config'
+const express=require('express')
+const cors =require('cors')
+const OpenAI=require('openai')
+const dotenv=require('dotenv')
+dotenv.config()
 
-
-const app = express();
+const app= express();
 app.use(express.json())
 app.use(cors())
-const port = 3000;
 
 app.post('/post',async(req,res)=>{
     try {
@@ -44,6 +43,6 @@ app.post('/post',async(req,res)=>{
 
 
 
-app.listen(port,()=>{
+app.listen( 3001,()=>{
     console.log("listeing on 3000")
 })
