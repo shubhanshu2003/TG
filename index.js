@@ -43,6 +43,6 @@ app.post('/post',async(req,res)=>{
 
 
 
-app.listen( 6969,()=>{
+app.listen( 3000,()=>{
     console.log("listeing on 3000")
 })
